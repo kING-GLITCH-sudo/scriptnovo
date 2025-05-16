@@ -179,13 +179,6 @@ setInterval(() => {
         const timeNow = document.createElement('div');
         timeNow.innerHTML = `<div class="timeNow text-xs" style="position: absolute; bottom: 0; right: 25px; color: #aaaaaa;">${hour}:${min}</div>`;
         const iconContainer = document.createElement('div');
-        iconContainer.innerHTML = `
-          <svg id="checkIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.626 24.684" style="position: absolute; bottom: 0; right: 10px;" height=15 width=13 >
-            <g transform="translate(-708.9 -601.383)">
-              <path d="M728.035,623.468l1.382,1.482,17.929-20.334" fill="none" class="check-stroke" stroke-linecap="round" stroke-width="3"></path>
-              <path d="M712.017,616.07l7.088,8.039,17.757-20.14" fill="none" class="check-stroke" stroke-linecap="round" stroke-width="3"></path>
-            </g>
-          </svg>`;
         allMessages[i].append(timeNow);
         allMessages[i].append(iconContainer);
       }
